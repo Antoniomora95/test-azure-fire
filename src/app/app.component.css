@@ -1,0 +1,16 @@
+.ng-valid[required], .ng-valid.required  {
+    border-bottom: 2px solid #42A948; /* green */
+  }
+  
+  .ng-invalid.ng-touched:not(form)  {
+    border-bottom: 2px solid tomato; /* red */
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  ul li{
+    cursor: pointer;
+  }

@@ -1,0 +1,33 @@
+<div class="row mb-2">
+    <div class="col-sm-2 font-weight-bolder text">
+        Age
+    </div>
+    <div class="col-sm-2 font-weight-bolder text">
+        Is bloqued ?
+    </div>
+    <div class="col-sm-3 font-weight-bolder text">
+        Firstname
+    </div>
+    <div class="col-sm-3 font-weight-bolder text">
+        Lastname
+    </div>
+</div>
+<div class="row pb-2" *ngFor="let user of listUsers">
+    <div class="col-sm-2 text-center text">
+        {{user.age}}
+    </div>
+    <div class="col-sm-2  text-center text">
+        {{user.bloqued ? 'Yes' : 'Nop'}}
+    </div>
+    <div class="col-sm-3  text-center text">
+        {{user.firstname}}
+    </div>
+    <div class="col-sm-3  text-center text">
+        {{user.lastname}}
+    </div>
+    <div class="col-sm-2 ">
+        <button class="btn btn-danger" (click)="deleteUser(user)">
+            Delete
+        </button>
+    </div>
+</div>
